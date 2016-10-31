@@ -51,4 +51,15 @@ public class BearTest{
       bear.eat(salmon);
       assertEquals( true, bear.bellyFull() ); 
   }
+
+
+  @Test // 5 --------------------------------------------
+  public void shouldEmptyBellyAfterSleep()
+  {
+    bear.eat(salmon);
+    assertEquals( 1, bear.foodCount() ); 
+    bear.sleep();
+    assertEquals( 0, bear.foodCount() ); 
+  }
+
 }

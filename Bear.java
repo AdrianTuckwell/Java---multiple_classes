@@ -40,6 +40,16 @@ public class Bear{
     return foodCount() == belly.length;
   }
 
+  public void sleep()
+  {
+    for (int i = 0; i < belly.length; i++)
+    {
+      belly[i] = null;
+    }
+
+  } 
+
+
 
 
 
